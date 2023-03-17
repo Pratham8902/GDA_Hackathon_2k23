@@ -13,7 +13,7 @@ class Profile(models.Model):
     date = models.DateField()
     phone = models.BigIntegerField()
     email = models.EmailField()
-    ranking = models.IntegerField()
+    ranking = models.CharField(max_length=20)
     profession = models.CharField(max_length=200)
     status = models.CharField(choices=types,max_length=20,null=True,blank=False,default='employee')
     present = models.BooleanField(default=False)
