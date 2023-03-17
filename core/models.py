@@ -20,6 +20,9 @@ class Profile(models.Model):
     image = models.ImageField()
     updated = models.DateTimeField(auto_now=True)
     shift = models.TimeField()
+    age=models.IntegerField()
+
+
     def __str__(self):
         return self.first_name +' '+self.last_name
 
