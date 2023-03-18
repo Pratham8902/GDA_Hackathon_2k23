@@ -22,6 +22,21 @@ class Profile(models.Model):
     shift = models.TimeField()
     age=models.IntegerField()
 
+    bg=models.CharField(max_length=10)
+    ephone=models.BigIntegerField()
+    address=models.CharField(max_length=100)
+
+    aadhar=models.BigIntegerField()
+
+    languages=models.CharField(max_length=200)
+    physician=models.CharField(max_length=200)
+    allergies=models.CharField(max_length=200)
+    height=models.DecimalField(max_digits=10,decimal_places=4)
+    weight=models.DecimalField(max_digits=10,decimal_places=4)
+    condition=models.CharField(max_length=200)
+    drugs=models.CharField(max_length=200)
+
+
 
     def __str__(self):
         return self.first_name +' '+self.last_name

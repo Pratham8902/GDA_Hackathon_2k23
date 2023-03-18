@@ -28,3 +28,18 @@ class ProfileForm(forms.ModelForm):
         #self.fields['image'].widget.attrs['class'] = 'form-control'
         self.fields['shift'].widget.attrs['class'] = 'form-control'
         self.fields['age'].widget.attrs['class'] = 'form-control'
+
+        self.fields['bg'].widget.attrs['class'] = 'form-control'
+        self.fields['ephone'].widget.attrs['class'] = 'form-control'
+        self.fields['address'].widget.attrs['class'] = 'form-control'
+
+        self.fields['aadhar'].widget.attrs['class'] = 'form-control'
+
+        self.fields['languages'].widget.attrs['class'] = 'form-control'
+        self.fields['physician'].widget.attrs['class'] = 'form-control'
+        self.fields['allergies'].widget.attrs['class'] = 'form-control'
+        self.fields['height'].widget.attrs['class'] = 'form-control'
+        self.fields['weight'].widget.attrs['class'] = 'form-control'
+        self.fields['condition'].widget.attrs['class'] = 'form-control'
+        self.fields['drugs'].widget.attrs['class'] = 'form-control'
+
